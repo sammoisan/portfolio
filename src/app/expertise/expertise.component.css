@@ -1,0 +1,49 @@
+i {
+  font-size: 5rem;
+  color: #FCF9F5;
+}
+
+b {
+  font-weight: 700;
+}
+
+.section-expertise {
+  background-color: #FCF9F5;
+  color: #14202B;
+  padding-top: 125px;
+  padding-bottom: 225px;
+}
+
+.tech-card {
+  background: #14202B;
+  text-align: center;
+  padding: 25px 0px;
+  border: 3px solid #32506C;
+  border-radius: 8px;
+}
+
+.tech-card:hover {
+  border-color: #2F90EB;
+}
+
+/* Shape CSS */
+
+.custom-shape-divider-bottom-1686075032 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1686075032 svg {
+  position: relative;
+  display: block;
+  width: calc(153% + 1.3px);
+  height: 98px;
+}
+
+.custom-shape-divider-bottom-1686075032 .shape-fill {
+  fill: #14202B;
+}

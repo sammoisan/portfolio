@@ -1,0 +1,169 @@
+.intro-section {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.name-job-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 850px;
+  padding-bottom: 200px;
+}
+
+.dev-name {
+  font-weight: 800;
+  font-size: 11vw;
+}
+
+.last-name {
+  position: relative;
+  z-index: -1;
+  animation: slide-in-left;
+  animation-duration: 2.5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.job-title {
+  font-size: 3vw;
+  letter-spacing: 1.2vw;
+  animation: slide-in-bottom;
+  animation-duration: 1.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+}
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid #FCF9F5;
+
+  position: absolute;
+  bottom: 125px;
+
+  border-radius: 50px;
+  cursor: pointer;
+
+  animation: visible;
+  animation-duration: 0.5s;
+  animation-delay: 3.0s;
+  animation-fill-mode: both;
+}
+
+.scroll-down::before, .scroll-down::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  border: 2px solid #FCF9F5;
+
+  height: 10px;
+  width: 10px;
+
+  transform: translate(-50%, -50%) rotate(45deg);
+
+  border-top: transparent;
+  border-left: transparent;
+
+  animation-name: scroll-down;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.scroll-down::after {
+  top: 20%;
+  animation-delay: 0.3s;
+}
+
+/* #Region Shape */
+
+.custom-shape-divider-bottom-1686000714 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1686000714 svg {
+  position: relative;
+  display: block;
+  width: calc(164% + 1.3px);
+  height: 178px;
+}
+
+.custom-shape-divider-bottom-1686000714 .shape-fill {
+  fill: #FCF9F5;
+}
+
+/* #EndRegion */
+
+/* #Region Animation */
+
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    left: -400px;
+    filter: blur(2px);
+  }
+
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(1px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    top: 70%;
+  }
+}
+
+
+/* #EndRegion */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .name-job-container {
+    min-height: 600px;
+  }
+}

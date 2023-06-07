@@ -1,0 +1,148 @@
+
+footer {
+  background-color: #FCF9F5;
+  color: #14202B;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.container {
+  padding-top: 75px;
+}
+
+.list-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  display: block;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+.lists-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-spacer {
+  flex-grow: 1;
+}
+
+/* #Region Commun */
+
+ul {
+  list-style-type: none;
+  font-size: 1rem;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+ul li {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #14202B;
+}
+
+.fa-brands, .fa-solid {
+  font-size: 2rem;
+}
+
+/* #EndRegion */
+
+/* #Region Social */
+.list-social {
+  display: flex;
+}
+
+.list-social li {
+  padding: 5px 6px;
+}
+
+.list-social li:first-child {
+  padding: 5px 0px;
+  padding-right: 5px;
+}
+
+.fa-github:hover {
+  color: #6564E5;
+}
+
+.fa-instagram:hover {
+  color: #F70182;
+}
+
+.fa-square-facebook:hover {
+  color: #1877F2;
+}
+
+.fa-linkedin:hover {
+  color: #0A66C2;
+}
+/* #EndRegion */
+
+/* #Region Contact */
+
+.list-contact li {
+  padding: 5px 0px;
+}
+
+.list-contact-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.list-contact-item i{
+  width: 45px;
+}
+
+.list-contact-text {
+  font-size: 1rem;
+}
+
+/* #EndRegion */
+
+/* #Region Author */
+.author-container {
+  text-align: center;
+}
+
+.author-container span {
+  display: block;
+  opacity: 0.85;
+  font-size: 0.85rem;
+}
+/* #EndRegion */
+
+/* #Region Shape */
+.custom-shape-divider-top-1686091868 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1686091868 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.custom-shape-divider-top-1686091868 .shape-fill {
+  fill: #14202B;
+}
+/* #EndRegion */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .lists-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
