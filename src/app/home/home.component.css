@@ -164,6 +164,6 @@
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
   .name-job-container {
-    min-height: 600px;
+    min-height: 500px;
   }
 }
