@@ -107,7 +107,7 @@
 @keyframes slide-in-left {
   0% {
     opacity: 0;
-    left: -400px;
+    left: -25vw;
     filter: blur(2px);
   }
 
@@ -120,7 +120,7 @@
 @keyframes slide-in-bottom {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(3vw);
     filter: blur(1px);
   }
 
