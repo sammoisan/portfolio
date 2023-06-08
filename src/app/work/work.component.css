@@ -7,33 +7,30 @@ b {
   font-weight: 800;
 }
 
-.row > .col {
+.row > .work-container {
   animation-name: more-visible;
   animation-duration: 0.3s;
   animation-fill-mode: both;
 }
 
-.row:hover > .col {
+.row:hover > .work-container {
   animation-name: less-visible;
   animation-duration: 0.3s;
   animation-fill-mode: both;
 }
 
-.col {
-  border-radius: 8px;
-}
-
-.col:hover {
-  background-color: rgba(252, 249, 245, 0.03);
-  opacity: 1 !important;
-}
-
-.col:hover > .work-container > .work-title {
+.work-container:hover > .work-title {
   color: #2F90EB;
 }
 
 .work-container {
   padding: 25px;
+  border-radius: 8px;
+}
+
+.work-container:hover {
+  background-color: rgba(252, 249, 245, 0.03);
+  opacity: 1 !important;
 }
 
 .work-title {
