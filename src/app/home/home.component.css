@@ -38,7 +38,7 @@
 .scroll-down {
   height: 50px;
   width: 30px;
-  border: 2px solid #FCF9F5;
+  border: 2px solid #fcf9f5;
 
   position: absolute;
   bottom: 125px;
@@ -48,15 +48,16 @@
 
   animation: visible;
   animation-duration: 0.5s;
-  animation-delay: 3.0s;
+  animation-delay: 3s;
   animation-fill-mode: both;
 }
 
-.scroll-down::before, .scroll-down::after {
-  content: '';
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
   position: absolute;
   top: 10%;
-  border: 2px solid #FCF9F5;
+  border: 2px solid #fcf9f5;
 
   height: 10px;
   width: 10px;
@@ -97,7 +98,15 @@
 }
 
 .custom-shape-divider-bottom-1686000714 .shape-fill {
-  fill: #FCF9F5;
+  fill: #fcf9f5;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1686000714 svg {
+    width: calc(164% + 1.3px);
+    height: 84px;
+  }
 }
 
 /* #EndRegion */
@@ -157,7 +166,6 @@
     top: 70%;
   }
 }
-
 
 /* #EndRegion */
 
