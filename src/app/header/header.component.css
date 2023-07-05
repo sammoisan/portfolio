@@ -20,13 +20,14 @@ ul li {
 }
 
 a {
-  color: #FCF9F5;
+  color: #fcf9f5;
   text-decoration: none;
   opacity: 0.65;
 }
 
 a:hover {
   opacity: 1;
+  transition: all 0.25s ease-in-out;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
